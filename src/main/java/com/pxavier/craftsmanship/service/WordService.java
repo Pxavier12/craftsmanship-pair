@@ -10,11 +10,11 @@ import java.util.List;
 public class WordService {
 
     public List<Word> wordsList = new ArrayList<>();
-    public List<Word> getTodos(){
+    public List<Word> getWordsList(){
         return wordsList;
     }
 
-    public void addTodos(Word word){
+    public void addWord(Word word){
         wordsList.add(new Word(word.word(), word.translations()));
     }
 }
